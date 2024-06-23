@@ -30,7 +30,18 @@
 		<img src="https://loremflickr.com/440/320" alt="" class="src" />
 	</div>
 </section>
-<section style="align-items: center;">
+<section class="align-center">
+	<h1>Контакты</h1>
+	<div id="contacts-links">
+		<div class="links">
+			<a target="_blank" rel="noreferrer" href="https://t.me/cjrecbooking_bot" class="tg-link"></a>
+		</div>
+		<div class="contact">
+			<a href="tel:+79537372555" class="uppercase">+7 953 737 25 55</a>
+		</div>
+	</div>
+</section>
+<section class="align-center">
 	<h1>Как добраться:</h1>
 	<iframe id="map" src="https://yandex.ru/map-widget/v1/?z=12&ol=biz&oid=95289557098" frameborder="0" title="map" />
 </section>
@@ -68,6 +79,54 @@
 		@media (min-width: 768px) {
 			flex-direction: row;
 			overflow-x: auto;
+		}
+	}
+
+	.contact {
+		padding: 0.7rem;
+		font-size: 0.9em;
+
+		.contact a {
+			color: white;
+
+			&:hover {
+				color: #990e0e;
+			}
+		}
+	}
+
+	#contacts-links {
+		display: flex;
+		flex-direction: column;
+		align-items: center;
+
+		@media (min-width: 768px) {
+			flex-direction: row;
+		}
+	}
+
+	.links {
+		position: relative;
+		display: inline-flex;
+		gap: 0.5em;
+		padding: 0.5em;
+		min-height: 80px;
+
+		a {
+			display: inline-block;
+			min-width: 1em;
+			background-size: 100%;
+			background-repeat: no-repeat;
+			background-position: center;
+		}
+	}
+
+	.tg-link {
+		background-image: url('/tg.svg');
+
+		&:hover,
+		&:focus {
+			background-image: url('/tg-hover.svg');
 		}
 	}
 </style>

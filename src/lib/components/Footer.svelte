@@ -7,6 +7,7 @@
 </footer>
 <style>
 	footer {
+		margin-top: 1rem;
 		text-align: center;
 	}
 </style>
