@@ -5,6 +5,7 @@
 		<a target="_blank" href="https://temqua.github.io">Artem</a>.
 	</p>
 </footer>
+
 <style>
 	footer {
 		margin-top: 1rem;
