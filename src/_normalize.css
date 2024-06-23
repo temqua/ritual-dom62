@@ -1,0 +1,41 @@
+html {
+	-webkit-text-size-adjust: none;
+	text-size-adjust: none;
+
+	@media (prefers-reduced-motion: no-preference) {
+		scroll-behavior: smooth;
+	}
+}
+
+img {
+	display: block;
+	max-width: 100%;
+}
+
+[hidden] {
+	display: none;
+}
+
+:focus:not(:focus-visible) {
+	outline: transparent;
+}
+
+label,
+button,
+select,
+summary,
+[type='radio'],
+[role='button'],
+[type='submit'],
+[type='checkbox'] {
+	cursor: pointer;
+}
+
+a {
+	text-decoration: none;
+}
+
+button,
+input {
+	font-family: inherit;
+}

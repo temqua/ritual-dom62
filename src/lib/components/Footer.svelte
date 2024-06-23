@@ -5,3 +5,8 @@
 		<a target="_blank" href="https://temqua.github.io">Artem</a>.
 	</p>
 </footer>
+<style>
+	footer {
+		text-align: center;
+	}
+</style>

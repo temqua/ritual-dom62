@@ -1,6 +1,7 @@
 <script>
 	import Footer from '$lib/components/Footer.svelte';
 	import Header from '$lib/components/Header.svelte';
+	import '../_normalize.css';
 	import '../global.css';
 </script>
 
@@ -21,7 +22,19 @@
 		display: flex;
 		flex-direction: column;
 		align-items: stretch;
-		background-color: #101820;
-		color: white;
+	}
+
+	@media (prefers-color-scheme: dark) {
+		#container {
+			background-color: #101820;
+			color: white;
+		}
+	}
+
+	@media (prefers-color-scheme: light) {
+		#container {
+			background-color: white;
+			color: #101820;
+		}
 	}
 </style>
